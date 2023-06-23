@@ -1,1 +1,42 @@
-# In-store-billing-application
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Name</title>
+</head>
+<body>
+  <h1>In-Store Billing Application</h1>
+
+  <p>The application is a versatile management and sales tool designed to streamline operations in a store or retail environment. It provides two main sections: Administration/Statistics and Sales/Checkout. In the Administration/Statistics section, users can manage categories by adding, deleting, and modifying them. They can also view valuable sales statistics, including the total quantity of products sold on the current day compared to the overall quantity of products sold since the store's establishment.
+
+In the Sales/Checkout section, users can browse products by category, add them to the cart, and proceed with the checkout process. After completing a transaction, users have the option to save the receipt, which is stored in JSON format for future reference. This allows users to track and analyze sales data.
+
+The application aims to enhance efficiency and organization in store management, providing a user-friendly interface for handling categories, products, and sales-related tasks. It helps store owners and employees keep track of sales performance, manage inventory, and streamline the checkout process for improved customer experience.
+
+Overall, the application offers a comprehensive solution for managing store operations and analyzing sales data, ultimately contributing to better decision-making and improved productivity in a retail setting.</p>
+
+  <h2>Features</h2>
+
+  <ul>
+    <li>
+      <strong>Administration/Statistics:</strong> This tab allows users to manage categories, including adding, deleting, and modifying categories. Users can also view statistics, including the total quantity of products sold on the current day divided by the overall quantity of products sold since the store's inception.
+    </li>
+    <li>
+      <strong>Sales/Checkout:</strong> In this tab, users can select a category and browse the products within that category. They can add products to the cart and proceed with the checkout process. Upon completing a transaction, users have the option to save the receipt, which is stored in JSON format and can be later reviewed in the statistics section.
+    </li>
+  </ul>
+
+  <h2>Limitations</h2>
+
+  <ul>
+    <li>The current version of the application does not support entering decimal values for the quantity of products sold in pieces. Potential enhancements could include adding support for decimal values.</li>
+    <li>The application currently lacks comprehensive input validation. It would be beneficial to include additional checks to ensure that users provide all the necessary information and prevent them from       accidentally leaving any fields blank or incomplete.</li>
+  </ul>
+
+  <h2>Contact</h2>
+<p>Feel free to contact, or to commmit to the repo.</p>
+
+</body>
+</html>
