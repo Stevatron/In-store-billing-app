@@ -33,7 +33,11 @@ Overall, the application offers a comprehensive solution for managing store oper
     <li>The current version of the application does not support entering decimal values for the quantity of products sold in pieces. Potential enhancements could include adding support for decimal values.</li>
     <li>The application currently lacks comprehensive input validation. It would be beneficial to include additional checks to ensure that users provide all the necessary information and prevent them from       accidentally leaving any fields blank or incomplete.</li>
   </ul>
-
+<h2>Requirements</h2>
+<ul>
+  <li>The application requires the user to have Newtonsoft JSON library installed in order to run successfully. Make sure to have the Newtonsoft JSON library set up before running the program.</li>
+  <li>The application is built using C#, so it requires a compatible C# development environment, such as Visual Studio or Visual Studio Code, to compile and run the code.</li>
+</ul>
   <h2>Contact</h2>
 <p>Feel free to contact, or to commmit to the repo.</p>
 
