@@ -41,7 +41,7 @@ Overall, the application offers a comprehensive solution for managing store oper
   <li>Modify the file path in the Artikal, Kategorija, and Racun classes to match your system's file structure. This ensures proper functionality of the JSON storage feature.</li>
 </ul>
   <h2>Contact</h2>
-<p>Feel free to contact, or to commmit to the repo.</p>
+<p>Feel free to contact, or to commmit to the repo..</p>
 
 </body>
 </html>
