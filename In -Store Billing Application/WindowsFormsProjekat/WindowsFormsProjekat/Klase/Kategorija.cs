@@ -11,7 +11,7 @@ namespace WindowsFormsProjekat.Klase
     public class Kategorija
     {
         public List<Kategorija> kategorije;
-        string putanja_json = @"F:\Preuzimanja\Projekat_Windows_Forme\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\kategorije.json";
+        string putanja_json = @"F:\Preuzimanja\New folder\In-store-billing-app\In -Store Billing Application\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\kategorije.json";
         public string Naziv { get; set; }
         public int Id { get; set; }
         public Kategorija()

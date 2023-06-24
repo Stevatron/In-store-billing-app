@@ -416,7 +416,7 @@ namespace WindowsFormsProjekat
                 Racun stavkaRacuna = new Racun
                 {
                     Naziv = nazivArtikla,
-                    Kolicina = Int32.Parse(cenaString),
+                    Kolicina = Double.Parse(cenaString),
                     datum = DateTime.Now.ToString("yyyy-MM-dd")
                     
                 };

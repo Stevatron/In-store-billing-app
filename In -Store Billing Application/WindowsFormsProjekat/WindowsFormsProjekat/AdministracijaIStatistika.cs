@@ -440,7 +440,7 @@ namespace WindowsFormsProjekat
             foreach (var podatak in grupisaniPodaci)
             {
 
-                int ukupnaKolicinaArtikla = ukupnaKolicina.ContainsKey(podatak.Naziv) ? ukupnaKolicina[podatak.Naziv] : 0;
+                double ukupnaKolicinaArtikla = ukupnaKolicina.ContainsKey(podatak.Naziv) ? ukupnaKolicina[podatak.Naziv] : 0;
 
                  // Kreiranje labela za prikaz naziva artikla i količine
                 Label labelNaziv = new Label();
@@ -459,7 +459,7 @@ namespace WindowsFormsProjekat
                  ProgressBar progressBar = new ProgressBar();
                  progressBar.Minimum = 0;
                  progressBar.Maximum = 100;
-                progressBar.Value = (podatak.Kolicina * 100) / ukupnaKolicinaArtikla ; // Izračunavanje procentualne vrednosti
+                 progressBar.Value = Convert.ToInt32((podatak.Kolicina * 100) / ukupnaKolicinaArtikla) ; // Izračunavanje procentualne vrednosti
                  progressBar.Width = progressBarWidth;
                  progressBar.Height = progressBarHeight;
                  progressBar.Top = posY;

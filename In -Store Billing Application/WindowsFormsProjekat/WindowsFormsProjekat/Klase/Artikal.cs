@@ -15,7 +15,7 @@ namespace WindowsFormsProjekat.Klase
         public int IdKategorije { get; set; }
         public double Cena { get; set; }
         public string JedinicaMere { get; set; }
-        string putanja_json = @"F:\Preuzimanja\Projekat_Windows_Forme\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\artikli.json";
+        string putanja_json = @"F:\Preuzimanja\New folder\In-store-billing-app\In -Store Billing Application\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\artikli.json";
 
         public Artikal()
         {

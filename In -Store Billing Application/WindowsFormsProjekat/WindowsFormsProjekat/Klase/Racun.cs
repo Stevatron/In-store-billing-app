@@ -12,9 +12,9 @@ namespace WindowsFormsProjekat.Klase
     {
         public List<Racun> stavkeRacuna;
         public string Naziv { get; set; }
-        public int Kolicina { get; set; }
+        public double Kolicina { get; set; }
         public string datum { get; set; }
-        string putanja_json = @"F:\Preuzimanja\Projekat_Windows_Forme\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\racun.json";
+        string putanja_json = @"F:\Preuzimanja\New folder\In-store-billing-app\In -Store Billing Application\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\racun.json";
 
         public Racun()
         {
