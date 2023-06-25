@@ -292,6 +292,22 @@ namespace WindowsFormsProjekat
 
         private void tbRacun_TextChanged(object sender, EventArgs e)
         {
+            string substring = "kom";
+            foreach(var artikalcic in artikalManager.artikali)
+            {
+                if(artikalcic.Naziv.Trim() == tbRacun.Text.Trim() && artikalcic.JedinicaMere.Trim() == substring.Trim())
+                {
+                    btZarez.Enabled = false;
+                    btBrojNula.Enabled = false;
+                    break;
+                }
+                else
+                {
+                    btZarez.Enabled = true;
+                    btBrojNula.Enabled = true;
+                }
+            }
+
 
             if(tbRacun.Text == string.Empty)
             {
@@ -322,7 +338,6 @@ namespace WindowsFormsProjekat
                 btBrojSedam.Enabled = true;
                 btBrojOsam.Enabled = true;
                 btBrojDevet.Enabled = true;
-                btBrojNula.Enabled = true;
                 btMnozenje.Enabled = true;
             }
         }
