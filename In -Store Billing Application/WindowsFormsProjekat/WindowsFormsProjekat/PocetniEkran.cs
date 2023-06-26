@@ -15,6 +15,8 @@ namespace WindowsFormsProjekat
         public PocetniEkran()
         {
             InitializeComponent();
+            MaximizeBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void btAdministracijaStatistika_Click(object sender, EventArgs e)

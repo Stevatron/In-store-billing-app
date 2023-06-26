@@ -29,6 +29,7 @@ namespace WindowsFormsProjekat
             artikalManager = new Artikal();
             racunManager = new Racun();
             dogadjajzaupis += artikalManager.snimiPokusajUnosa;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void Prodaja_Naplata_Load(object sender, EventArgs e)
@@ -50,6 +51,7 @@ namespace WindowsFormsProjekat
             btBrojDevet.Enabled = false;
             btBrojNula.Enabled = false;
             btMnozenje.Enabled = false;
+            MaximizeBox = false;
 
             foreach (Kategorija kategorija in kategorijaManager.kategorije)
             {
@@ -165,6 +167,32 @@ namespace WindowsFormsProjekat
         private void btMnozenje_Click(object sender, EventArgs e)
         {
             tbRacun.Text += " x ";
+            btBrojJedan.Enabled = true;
+            btBrojDva.Enabled = true;
+            btBrojTri.Enabled = true;
+            btBrojCetiri.Enabled = true;
+            btBrojPet.Enabled = true;
+            btBrojSest.Enabled = true;
+            btBrojSedam.Enabled = true;
+            btBrojOsam.Enabled = true;
+            btBrojDevet.Enabled = true;
+            btBrojNula.Enabled = true;
+
+            string substring = "kom";
+            foreach (var artikalcic in artikalManager.artikali)
+            {
+                if (artikalcic.Naziv.Trim() == tbRacun.Text.Trim() && artikalcic.JedinicaMere.Trim() == substring.Trim())
+                {
+                    btZarez.Enabled = false;
+                    btBrojNula.Enabled = false;
+                    break;
+                }
+                else
+                {
+                    btZarez.Enabled = true;
+                    btBrojNula.Enabled = true;
+                }
+            }
         }
 
         
@@ -292,21 +320,7 @@ namespace WindowsFormsProjekat
 
         private void tbRacun_TextChanged(object sender, EventArgs e)
         {
-            string substring = "kom";
-            foreach(var artikalcic in artikalManager.artikali)
-            {
-                if(artikalcic.Naziv.Trim() == tbRacun.Text.Trim() && artikalcic.JedinicaMere.Trim() == substring.Trim())
-                {
-                    btZarez.Enabled = false;
-                    btBrojNula.Enabled = false;
-                    break;
-                }
-                else
-                {
-                    btZarez.Enabled = true;
-                    btBrojNula.Enabled = true;
-                }
-            }
+
 
 
             if(tbRacun.Text == string.Empty)
@@ -324,21 +338,13 @@ namespace WindowsFormsProjekat
                 btBrojDevet.Enabled = false;
                 btBrojNula.Enabled = false;
                 btMnozenje.Enabled = false;
+                btZarez.Enabled = false;
             }
             else
             {
-                btPonistavanje.Enabled = true;
-                btUnos.Enabled = true;
-                btBrojJedan.Enabled = true;
-                btBrojDva.Enabled = true;
-                btBrojTri.Enabled = true;
-                btBrojCetiri.Enabled = true;
-                btBrojPet.Enabled = true;
-                btBrojSest.Enabled = true;
-                btBrojSedam.Enabled = true;
-                btBrojOsam.Enabled = true;
-                btBrojDevet.Enabled = true;
                 btMnozenje.Enabled = true;
+                btUnos.Enabled = true;
+                btPonistavanje.Enabled = true;
             }
         }
 

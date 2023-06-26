@@ -32,6 +32,8 @@ namespace WindowsFormsProjekat
             kategorijaManager = new Kategorija();
             artikalManager = new Artikal();
             racunManager = new Racun();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
         }
 
         private void AdministracijaIStatistika_Load_1(object sender, EventArgs e)
@@ -57,7 +59,6 @@ namespace WindowsFormsProjekat
             }
 
 
-           
 
         }
 

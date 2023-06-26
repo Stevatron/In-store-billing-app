@@ -10,5 +10,29 @@
     "Naziv": "Krompir",
     "Kolicina": 0.52,
     "datum": "2023-06-24"
+  },
+  {
+    "stavkeRacuna": [],
+    "Naziv": "Krema za ruke 500 g",
+    "Kolicina": 1.0,
+    "datum": "2023-06-26"
+  },
+  {
+    "stavkeRacuna": [],
+    "Naziv": "Krema za ruke 500 g",
+    "Kolicina": 5.0,
+    "datum": "2023-06-26"
+  },
+  {
+    "stavkeRacuna": [],
+    "Naziv": "Luk",
+    "Kolicina": 1.0,
+    "datum": "2023-06-26"
+  },
+  {
+    "stavkeRacuna": [],
+    "Naziv": "Sargarepa",
+    "Kolicina": 9.0,
+    "datum": "2023-06-26"
   }
 ]
