@@ -30,7 +30,6 @@ Overall, the application offers a comprehensive solution for managing store oper
   <h2>Limitations</h2>
 
   <ul>
-    <li>The application currently lacks comprehensive input validation. It would be beneficial to include additional checks to ensure that users provide all the necessary information and prevent them from       accidentally leaving any fields blank or incomplete.</li>
     <li>The application GUI is written on Serbian language, which will make it difficult for some people to understand and use the application properly.</li>
   </ul>
 <h2>Requirements</h2>
