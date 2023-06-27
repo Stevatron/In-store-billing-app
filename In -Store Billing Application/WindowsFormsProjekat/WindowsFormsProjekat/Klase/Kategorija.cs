@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 
 namespace WindowsFormsProjekat.Klase
@@ -11,7 +12,7 @@ namespace WindowsFormsProjekat.Klase
     public class Kategorija
     {
         public List<Kategorija> kategorije;
-        string putanja_json = @"F:\Preuzimanja\New folder\In-store-billing-app\In -Store Billing Application\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\kategorije.json";
+        string putanja_json = Application.StartupPath + @"\Fajlovi\kategorije.json";
         public string Naziv { get; set; }
         public int Id { get; set; }
         public Kategorija()

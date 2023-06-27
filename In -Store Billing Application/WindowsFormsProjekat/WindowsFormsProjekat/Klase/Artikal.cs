@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Windows.Forms;
 
 namespace WindowsFormsProjekat.Klase
 {
@@ -15,7 +16,7 @@ namespace WindowsFormsProjekat.Klase
         public int IdKategorije { get; set; }
         public double Cena { get; set; }
         public string JedinicaMere { get; set; }
-        string putanja_json = @"F:\Preuzimanja\New folder\In-store-billing-app\In -Store Billing Application\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\artikli.json";
+        string putanja_json = Application.StartupPath + @"/Fajlovi/artikli.json";
 
         public Artikal()
         {
@@ -63,7 +64,7 @@ namespace WindowsFormsProjekat.Klase
         public void snimiPokusajUnosa(string kategorija, DateTime vreme_unosa)
         {
             string poruka = $"Покушај уноса артикла из категорије '{kategorija}' након 22 часа. Време уноса: {vreme_unosa}.";
-            string putanjaFajla = @"F:\Preuzimanja\Projekat_Windows_Forme\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\PokusajKupovine.txt";
+            string putanjaFajla = Application.StartupPath + @"\Fajlovi\PokusajKupovine.txt";
             using (StreamWriter writer = File.AppendText(putanjaFajla))
             {
                 writer.WriteLine(poruka);

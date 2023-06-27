@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 
 namespace WindowsFormsProjekat.Klase
@@ -14,7 +16,7 @@ namespace WindowsFormsProjekat.Klase
         public string Naziv { get; set; }
         public double Kolicina { get; set; }
         public string datum { get; set; }
-        string putanja_json = @"F:\Preuzimanja\New folder\In-store-billing-app\In -Store Billing Application\WindowsFormsProjekat\WindowsFormsProjekat\Fajlovi\racun.json";
+        string putanja_json = Application.StartupPath + @"\Fajlovi\racun.json";
 
         public Racun()
         {

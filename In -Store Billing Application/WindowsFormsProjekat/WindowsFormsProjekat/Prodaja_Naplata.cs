@@ -366,11 +366,6 @@ namespace WindowsFormsProjekat
                 ukupna_cena = double.Parse(delovi[0]);
                 ukupna_cena -= cena_artikla;
 
-                /*if(ukupna_cena < 0)
-                {
-                    ukupna_cena = 0;
-                }*/
-
                 lbukupnaCena.Text = ukupna_cena.ToString("N2") + " rsd";
                 ukupna_cena = 0;
             }
