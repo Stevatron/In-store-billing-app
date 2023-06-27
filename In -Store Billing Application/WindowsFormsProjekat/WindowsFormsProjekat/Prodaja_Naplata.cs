@@ -166,7 +166,6 @@ namespace WindowsFormsProjekat
 
         private void btMnozenje_Click(object sender, EventArgs e)
         {
-            tbRacun.Text += " x ";
             btBrojJedan.Enabled = true;
             btBrojDva.Enabled = true;
             btBrojTri.Enabled = true;
@@ -193,6 +192,9 @@ namespace WindowsFormsProjekat
                     btBrojNula.Enabled = true;
                 }
             }
+
+            tbRacun.Text += " x ";
+            
         }
 
         
@@ -453,6 +455,7 @@ namespace WindowsFormsProjekat
 
             tbFiskalniRacun.Text = string.Empty;
             tbUnosObrada.Show();
+            tbCeo.SelectTab(0);
             lbUnosObrada.Items.Clear();
             lbukupnaCena.Text = "0,00 rsd";
             tbRacun.Text = string.Empty;
