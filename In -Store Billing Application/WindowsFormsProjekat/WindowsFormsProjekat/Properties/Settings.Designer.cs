@@ -22,5 +22,17 @@ namespace WindowsFormsProjekat.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("engleski")]
+        public string jezik {
+            get {
+                return ((string)(this["jezik"]));
+            }
+            set {
+                this["jezik"] = value;
+            }
+        }
     }
 }

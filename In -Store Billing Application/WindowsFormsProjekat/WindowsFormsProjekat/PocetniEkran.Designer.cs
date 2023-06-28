@@ -58,9 +58,12 @@
             // 
             // srb
             // 
-            this.srb.Location = new System.Drawing.Point(97, 171);
+            this.srb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.srb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.srb.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.srb.Location = new System.Drawing.Point(12, 158);
             this.srb.Name = "srb";
-            this.srb.Size = new System.Drawing.Size(75, 23);
+            this.srb.Size = new System.Drawing.Size(160, 44);
             this.srb.TabIndex = 2;
             this.srb.Text = "SRB";
             this.srb.UseVisualStyleBackColor = true;
@@ -68,9 +71,13 @@
             // 
             // eng
             // 
-            this.eng.Location = new System.Drawing.Point(178, 171);
+            this.eng.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.eng.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.eng.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.eng.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.eng.Location = new System.Drawing.Point(178, 158);
             this.eng.Name = "eng";
-            this.eng.Size = new System.Drawing.Size(75, 23);
+            this.eng.Size = new System.Drawing.Size(160, 44);
             this.eng.TabIndex = 3;
             this.eng.Text = "ENG";
             this.eng.UseVisualStyleBackColor = true;
@@ -80,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 206);
+            this.ClientSize = new System.Drawing.Size(350, 214);
             this.Controls.Add(this.eng);
             this.Controls.Add(this.srb);
             this.Controls.Add(this.btProdaja_Naplata);

@@ -503,6 +503,10 @@ namespace WindowsFormsProjekat
             AAbtDodajArtikal.Text = "Dodaj artikal";
             AAbtIzmeniArtikal.Text = "Izmeni artikal";
             AAbtObrisiartikal.Text = "Izbrisi artikal";
+            AAlabelKategorije.Text = "Kategorija:";
+            AALabelNaziva.Text = "Naziv Artikla:";
+            AACenaArtikla.Text = "Cena Artikla:";
+            AAJedinicaMere.Text = "Jedinica mere artikla";
         }
 
         public void SetEnglishLang()
@@ -518,6 +522,10 @@ namespace WindowsFormsProjekat
             AAbtDodajArtikal.Text = "Add article";
             AAbtIzmeniArtikal.Text = "Edit article";
             AAbtObrisiartikal.Text = "Delete article";
+            AAlabelKategorije.Text = "Category:";
+            AALabelNaziva.Text = "Article Name:";
+            AACenaArtikla.Text = "Price of the article:";
+            AAJedinicaMere.Text = "Unit of measure of article:";
         }
 
 

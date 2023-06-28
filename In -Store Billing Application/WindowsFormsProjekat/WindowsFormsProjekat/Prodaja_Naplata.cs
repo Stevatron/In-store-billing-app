@@ -52,6 +52,7 @@ namespace WindowsFormsProjekat
             btBrojNula.Enabled = false;
             btMnozenje.Enabled = false;
             MaximizeBox = false;
+            
 
             foreach (Kategorija kategorija in kategorijaManager.kategorije)
             {
@@ -493,7 +494,7 @@ namespace WindowsFormsProjekat
             this.Text = "Selling/Billing";
             tbTransakcija.Text = "New Transaction";
             tbUnosObrada.Text = "Input/Processing";
-            tbFiskalniRacun.Text = "Fiscal Bill";
+            tabFiskalniRacun.Text = "Fiscal Bill";
             btObrisi.Text = "Delete";
             btDaljaObrada.Text = "Continue =>";
             btUnos.Text = "Input";
