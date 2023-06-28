@@ -22,6 +22,8 @@ namespace WindowsFormsProjekat
         private Kategorija kategorijaManager;
         private Artikal artikalManager;
         private Racun racunManager;
+
+        bool proba = false;
         public Prodaja_Naplata()
         {
             InitializeComponent();
@@ -399,6 +401,7 @@ namespace WindowsFormsProjekat
 
         private void btDaljaObrada_Click(object sender, EventArgs e)
         {
+            
             if (lbUnosObrada.Items.Count == 0)
             {
                 MessageBox.Show("ListBox is empty. Add items before pressing the button.");
@@ -419,7 +422,9 @@ namespace WindowsFormsProjekat
             sb.AppendLine(lbukupnaCena.Text);
                
             tbFiskalniRacun.Text = sb.ToString();
+            proba = true;
             tbCeo.SelectedTab = tabFiskalniRacun;
+
         }
 
         private void btSacuvajRacun_Click(object sender, EventArgs e)
@@ -500,6 +505,19 @@ namespace WindowsFormsProjekat
             btUnos.Text = "Input";
             btPonistavanje.Text = "Cancel input";
             btSacuvajRacun.Text = "Save the reciept";
+        }
+
+        private void tbCeo_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (e.TabPage == tbCeo.TabPages[1])
+            {
+                e.Cancel = true;
+            }
+            if(proba == true)
+            {
+                e.Cancel = false;
+                proba = false;
+            }
         }
     }
 }

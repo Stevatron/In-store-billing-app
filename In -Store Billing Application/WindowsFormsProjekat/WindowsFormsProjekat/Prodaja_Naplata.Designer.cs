@@ -113,6 +113,7 @@
             this.tbCeo.SelectedIndex = 0;
             this.tbCeo.Size = new System.Drawing.Size(295, 186);
             this.tbCeo.TabIndex = 4;
+            this.tbCeo.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tbCeo_Selecting);
             // 
             // tbUnosObrada
             // 
@@ -144,7 +145,7 @@
             // 
             this.btDaljaObrada.BackColor = System.Drawing.Color.Transparent;
             this.btDaljaObrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btDaljaObrada.Location = new System.Drawing.Point(160, 108);
+            this.btDaljaObrada.Location = new System.Drawing.Point(159, 108);
             this.btDaljaObrada.Name = "btDaljaObrada";
             this.btDaljaObrada.Size = new System.Drawing.Size(121, 40);
             this.btDaljaObrada.TabIndex = 2;
