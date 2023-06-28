@@ -27,11 +27,6 @@ Overall, the application offers a comprehensive solution for managing store oper
     </li>
   </ul>
 
-  <h2>Limitations</h2>
-
-  <ul>
-    <li>The application GUI is written on Serbian language, which will make it difficult for some people to understand and use the application properly.</li>
-  </ul>
 <h2>Requirements</h2>
 <ul>
   <li>The application requires the user to have Newtonsoft JSON library installed in order to run successfully. Make sure to have the Newtonsoft JSON library set up before running the program.</li>
