@@ -157,9 +157,9 @@
             this.lbukupnaCena.AutoSize = true;
             this.lbukupnaCena.Location = new System.Drawing.Point(6, 122);
             this.lbukupnaCena.Name = "lbukupnaCena";
-            this.lbukupnaCena.Size = new System.Drawing.Size(60, 19);
+            this.lbukupnaCena.Size = new System.Drawing.Size(49, 19);
             this.lbukupnaCena.TabIndex = 1;
-            this.lbukupnaCena.Text = "0,00 rsd";
+            this.lbukupnaCena.Text = "0,00 $";
             this.lbukupnaCena.Click += new System.EventHandler(this.lbukupnaCena_Click);
             // 
             // lbUnosObrada
@@ -449,15 +449,8 @@
         #endregion
         private System.Windows.Forms.TextBox tbCitac;
         private System.Windows.Forms.FlowLayoutPanel trArtikli;
-        private System.Windows.Forms.Button tbTransakcija;
         private System.Windows.Forms.TabControl tbCeo;
-        private System.Windows.Forms.TabPage tbUnosObrada;
-        private System.Windows.Forms.TabPage tabFiskalniRacun;
-        private System.Windows.Forms.Button btDaljaObrada;
-        private System.Windows.Forms.Label lbukupnaCena;
         private System.Windows.Forms.ListBox lbUnosObrada;
-        private System.Windows.Forms.Button btObrisi;
-        private System.Windows.Forms.Button btSacuvajRacun;
         private System.Windows.Forms.Button btMnozenje;
         private System.Windows.Forms.TextBox tbRacun;
         private System.Windows.Forms.Button btBrojJedan;
@@ -469,13 +462,20 @@
         private System.Windows.Forms.Button btBrojTri;
         private System.Windows.Forms.Button btBrojSest;
         private System.Windows.Forms.Button btBrojDevet;
-        private System.Windows.Forms.Button btUnos;
-        private System.Windows.Forms.Button btPonistavanje;
         private System.Windows.Forms.Button btBrojNula;
         private System.Windows.Forms.Button btZarez;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         public System.Windows.Forms.FlowLayoutPanel trKategorija;
         private System.IO.FileSystemWatcher fileSystemWatcher2;
         public System.Windows.Forms.TextBox tbFiskalniRacun;
+        public System.Windows.Forms.Button tbTransakcija;
+        public System.Windows.Forms.TabPage tbUnosObrada;
+        public System.Windows.Forms.TabPage tabFiskalniRacun;
+        public System.Windows.Forms.Button btSacuvajRacun;
+        public System.Windows.Forms.Button btDaljaObrada;
+        public System.Windows.Forms.Label lbukupnaCena;
+        public System.Windows.Forms.Button btObrisi;
+        public System.Windows.Forms.Button btUnos;
+        public System.Windows.Forms.Button btPonistavanje;
     }
 }

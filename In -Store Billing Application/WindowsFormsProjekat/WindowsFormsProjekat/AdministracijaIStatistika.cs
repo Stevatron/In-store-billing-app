@@ -87,9 +87,11 @@ namespace WindowsFormsProjekat
 
                 if (kategorijaManager.kategorije.Any(k => k.Naziv == naziv_kategorije))
                 {
-                    MessageBox.Show("Kategorija sa istim nazivom već postoji!");
+                    MessageBox.Show("Category with the same name already exists!");
                     return;
                 }
+
+
 
                 int noviId = 0;
                 while (kategorijaManager.kategorije.Any(k => k.Id == noviId))
@@ -117,7 +119,7 @@ namespace WindowsFormsProjekat
             }
             else
             {
-                MessageBox.Show("Polje za naziv je prazno!");
+                MessageBox.Show("Field name is empty!");
                 return;
             }
         }
@@ -189,7 +191,7 @@ namespace WindowsFormsProjekat
 
                     if(provera == true)
                     {
-                        MessageBox.Show("Obrisite sve artikle sa ovom kategorijom kako bi ste mogli da obriste kategoriju!");
+                        MessageBox.Show("Clear all items within this category so you can delete the category!");
                         return;
                     }
 
@@ -226,7 +228,7 @@ namespace WindowsFormsProjekat
 
                 if (artikalManager.artikali.Any(k => k.Naziv == naziv_artikla))
                 {
-                    MessageBox.Show("Artikal sa istim nazivom već postoji!");
+                    MessageBox.Show("An item with the same name already exists!");
                     return;
                 }
 
@@ -246,7 +248,7 @@ namespace WindowsFormsProjekat
 
                 if(provera == false)
                 {
-                    MessageBox.Show("Ne postoji vazeca kategorija, molimo vas izaberite neku sa liste.");
+                    MessageBox.Show("There is no valid category, please select one from the list.");
                     return;
                 }
                 
@@ -273,7 +275,7 @@ namespace WindowsFormsProjekat
             }
             else
             {
-                MessageBox.Show("Neko polje vam je prazno!");
+                MessageBox.Show("Some of your fields are empty!");
                 return;
             }
         }
@@ -302,7 +304,7 @@ namespace WindowsFormsProjekat
 
                 if (provera == false)
                 {
-                    MessageBox.Show("Ne postoji uneta kategorija, unesite neku sa liste.");
+                    MessageBox.Show("There is no category entered, please enter one from the list.");
                     return;
                 }
 
@@ -330,7 +332,7 @@ namespace WindowsFormsProjekat
                 }
                 else
                 {
-                    MessageBox.Show("Neka polja su vam prazna!");
+                    MessageBox.Show("Some of your fields are empty!");
                     return;
                 }
             }
@@ -488,7 +490,37 @@ namespace WindowsFormsProjekat
 
         }
 
-        
+        public void SetSerbianLang()
+        {
+            this.Text = "Administracija/Statistika";
+            tabAzuriranjeKat.Text = "Menadzer kategorija";
+            tabAzuriranjeArt.Text = "Menadzer artikla";
+            tabPregledStat.Text = "Statistika";
+            nazivKategorije.Text = "Naziv kategorije:";
+            DodajKat.Text = "Dodaj kategoriju";
+            IzmeniKat.Text = "Izmeni ime kategorije";
+            ObrisiKat.Text = "Izbrisi kategoriju";
+            AAbtDodajArtikal.Text = "Dodaj artikal";
+            AAbtIzmeniArtikal.Text = "Izmeni artikal";
+            AAbtObrisiartikal.Text = "Izbrisi artikal";
+        }
+
+        public void SetEnglishLang()
+        {
+            this.Text = "Administration/Statistics";
+            tabAzuriranjeKat.Text = "Categorie Managment";
+            tabAzuriranjeArt.Text = "Article Managment";
+            tabPregledStat.Text = "Statistics";
+            nazivKategorije.Text = "Name of the Category:";
+            DodajKat.Text = "Add category";
+            IzmeniKat.Text = "Edit category name";
+            ObrisiKat.Text = "Delete category";
+            AAbtDodajArtikal.Text = "Add article";
+            AAbtIzmeniArtikal.Text = "Edit article";
+            AAbtObrisiartikal.Text = "Delete article";
+        }
+
+
 
 
     }

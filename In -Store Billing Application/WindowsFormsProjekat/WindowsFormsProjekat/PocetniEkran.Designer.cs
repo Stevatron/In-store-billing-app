@@ -30,6 +30,8 @@
         {
             this.btAdministracijaStatistika = new System.Windows.Forms.Button();
             this.btProdaja_Naplata = new System.Windows.Forms.Button();
+            this.srb = new System.Windows.Forms.Button();
+            this.eng = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btAdministracijaStatistika
@@ -39,7 +41,7 @@
             this.btAdministracijaStatistika.Name = "btAdministracijaStatistika";
             this.btAdministracijaStatistika.Size = new System.Drawing.Size(326, 59);
             this.btAdministracijaStatistika.TabIndex = 0;
-            this.btAdministracijaStatistika.Text = "Administracija i statistika";
+            this.btAdministracijaStatistika.Text = "Administracija/Statistika";
             this.btAdministracijaStatistika.UseVisualStyleBackColor = true;
             this.btAdministracijaStatistika.Click += new System.EventHandler(this.btAdministracijaStatistika_Click);
             // 
@@ -54,15 +56,37 @@
             this.btProdaja_Naplata.UseVisualStyleBackColor = true;
             this.btProdaja_Naplata.Click += new System.EventHandler(this.btProdaja_Naplata_Click);
             // 
+            // srb
+            // 
+            this.srb.Location = new System.Drawing.Point(97, 171);
+            this.srb.Name = "srb";
+            this.srb.Size = new System.Drawing.Size(75, 23);
+            this.srb.TabIndex = 2;
+            this.srb.Text = "SRB";
+            this.srb.UseVisualStyleBackColor = true;
+            this.srb.Click += new System.EventHandler(this.srb_Click);
+            // 
+            // eng
+            // 
+            this.eng.Location = new System.Drawing.Point(178, 171);
+            this.eng.Name = "eng";
+            this.eng.Size = new System.Drawing.Size(75, 23);
+            this.eng.TabIndex = 3;
+            this.eng.Text = "ENG";
+            this.eng.UseVisualStyleBackColor = true;
+            this.eng.Click += new System.EventHandler(this.eng_Click);
+            // 
             // PocetniEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 186);
+            this.ClientSize = new System.Drawing.Size(350, 206);
+            this.Controls.Add(this.eng);
+            this.Controls.Add(this.srb);
             this.Controls.Add(this.btProdaja_Naplata);
             this.Controls.Add(this.btAdministracijaStatistika);
             this.Name = "PocetniEkran";
-            this.Text = "Aplikacija Za Trgovinu";
+            this.Text = "Aplikacija za trgovinu";
             this.Load += new System.EventHandler(this.PocetniEkran_Load);
             this.ResumeLayout(false);
 
@@ -72,6 +96,8 @@
 
         private System.Windows.Forms.Button btAdministracijaStatistika;
         private System.Windows.Forms.Button btProdaja_Naplata;
+        private System.Windows.Forms.Button srb;
+        private System.Windows.Forms.Button eng;
     }
 }
 

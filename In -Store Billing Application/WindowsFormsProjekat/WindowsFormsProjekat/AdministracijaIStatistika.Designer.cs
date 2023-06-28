@@ -324,26 +324,26 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.ListBox AKlistbox;
-        private System.Windows.Forms.Button ObrisiKat;
-        private System.Windows.Forms.Button IzmeniKat;
-        private System.Windows.Forms.Button DodajKat;
-        private System.Windows.Forms.Label nazivKategorije;
         private System.Windows.Forms.ListBox AAlistbox;
-        private System.Windows.Forms.Label AAlabelKategorije;
-        private System.Windows.Forms.Label AAJedinicaMere;
         private System.Windows.Forms.TextBox tbJMArtikla;
-        private System.Windows.Forms.Label AACenaArtikla;
         private System.Windows.Forms.TextBox tbCenaArtikla;
         private System.Windows.Forms.TextBox tbNazivArtikla;
-        private System.Windows.Forms.Label AALabelNaziva;
         public System.Windows.Forms.TabPage tabAzuriranjeKat;
         public System.Windows.Forms.TabPage tabAzuriranjeArt;
         public System.Windows.Forms.TextBox tbNaziv;
         public System.Windows.Forms.ComboBox cbKategorija;
-        private System.Windows.Forms.Button AAbtObrisiartikal;
-        private System.Windows.Forms.Button AAbtIzmeniArtikal;
-        private System.Windows.Forms.Button AAbtDodajArtikal;
         public System.Windows.Forms.DateTimePicker PrikaziStatistiku;
         public System.Windows.Forms.TabPage tabPregledStat;
+        public System.Windows.Forms.Label nazivKategorije;
+        public System.Windows.Forms.Button ObrisiKat;
+        public System.Windows.Forms.Button IzmeniKat;
+        public System.Windows.Forms.Button DodajKat;
+        public System.Windows.Forms.Label AAlabelKategorije;
+        public System.Windows.Forms.Label AAJedinicaMere;
+        public System.Windows.Forms.Label AACenaArtikla;
+        public System.Windows.Forms.Label AALabelNaziva;
+        public System.Windows.Forms.Button AAbtObrisiartikal;
+        public System.Windows.Forms.Button AAbtIzmeniArtikal;
+        public System.Windows.Forms.Button AAbtDodajArtikal;
     }
 }

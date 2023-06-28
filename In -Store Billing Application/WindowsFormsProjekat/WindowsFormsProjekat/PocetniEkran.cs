@@ -12,6 +12,7 @@ namespace WindowsFormsProjekat
 {
     public partial class PocetniEkran : Form
     {
+
         public PocetniEkran()
         {
             InitializeComponent();
@@ -21,20 +22,45 @@ namespace WindowsFormsProjekat
 
         private void btAdministracijaStatistika_Click(object sender, EventArgs e)
         {
-            AdministracijaIStatistika forma1 = new AdministracijaIStatistika();
-            forma1.Show();
-
+            AdministracijaIStatistika admstat = new AdministracijaIStatistika();
+            admstat.Show();
         }
 
         private void btProdaja_Naplata_Click(object sender, EventArgs e)
         {
-            Prodaja_Naplata forma2 = new Prodaja_Naplata();
-            forma2.Show();
+            Prodaja_Naplata prodnap = new Prodaja_Naplata();
+            prodnap.Show();
         }
 
         private void PocetniEkran_Load(object sender, EventArgs e)
         {
-
+            AdministracijaIStatistika admstat = new AdministracijaIStatistika();
+            Prodaja_Naplata prodnap = new Prodaja_Naplata();
+            admstat.SetEnglishLang();
+            prodnap.SetEnglishLang();
         }
+
+        private void srb_Click(object sender, EventArgs e)
+        {
+            AdministracijaIStatistika admstat = new AdministracijaIStatistika();
+            Prodaja_Naplata prodnap = new Prodaja_Naplata();
+            admstat.SetSerbianLang();
+            prodnap.SetSerbianLang();
+            this.Text = "Aplikacija za trgovinu";
+            btAdministracijaStatistika.Text = "Administracija/Statistika";
+            btProdaja_Naplata.Text = "Prodaja/Naplata";
+        }
+
+        private void eng_Click(object sender, EventArgs e)
+        {
+            AdministracijaIStatistika admstat = new AdministracijaIStatistika();
+            Prodaja_Naplata prodnap = new Prodaja_Naplata();
+            admstat.SetEnglishLang();
+            prodnap.SetEnglishLang();
+            this.Text = "Application for marketplace";
+            btAdministracijaStatistika.Text = "Administration/Statistics";
+            btProdaja_Naplata.Text = "Selling/Billing";
+        }
+
     }
 }

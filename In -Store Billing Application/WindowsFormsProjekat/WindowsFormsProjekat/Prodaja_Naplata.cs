@@ -214,7 +214,7 @@ namespace WindowsFormsProjekat
                 if(art.Naziv.Trim() == naziv.Trim() && art.IdKategorije == 3 && vreme_unosa.Hour > 22)
                 {
                     dogadjajzaupis?.Invoke(art.Naziv, vreme_unosa);
-                    MessageBox.Show("Немогуће је унети алкохолна пића после 22 часа.");
+                    MessageBox.Show("It is impossible to bring in alcoholic beverages after 10 pm.");
                     return;
                 }
             }
@@ -264,7 +264,7 @@ namespace WindowsFormsProjekat
 
                 }
 
-                lbukupnaCena.Text = ukupna_cena.ToString("N2") + " rsd";
+                lbukupnaCena.Text = ukupna_cena.ToString("N2") + " $";
 
 
 
@@ -308,12 +308,12 @@ namespace WindowsFormsProjekat
 
                 }
 
-                lbukupnaCena.Text = ukupna_cena.ToString("N2") + " rsd";
+                lbukupnaCena.Text = ukupna_cena.ToString("N2") + " $";
 
             }
             else
             {
-                MessageBox.Show("Unos nije validan!");
+                MessageBox.Show("The entry is not valid!");
             }
 
 
@@ -366,7 +366,7 @@ namespace WindowsFormsProjekat
                 ukupna_cena = double.Parse(delovi[0]);
                 ukupna_cena -= cena_artikla;
 
-                lbukupnaCena.Text = ukupna_cena.ToString("N2") + " rsd";
+                lbukupnaCena.Text = ukupna_cena.ToString("N2") + " $";
                 ukupna_cena = 0;
             }
 
@@ -400,7 +400,7 @@ namespace WindowsFormsProjekat
         {
             if (lbUnosObrada.Items.Count == 0)
             {
-                MessageBox.Show("ListBox je prazan. Dodajte stavke pre nego što pritisnete dugme.");
+                MessageBox.Show("ListBox is empty. Add items before pressing the button.");
                 return;
             }
 
@@ -446,13 +446,13 @@ namespace WindowsFormsProjekat
 
 
             racunManager.SacuvajRacun();
-            MessageBox.Show("Racuni su uspesno snimljeni u fajl!");
+            MessageBox.Show("The bill have been saved to file successfully!");
 
             tbFiskalniRacun.Text = string.Empty;
             tbUnosObrada.Show();
             tbCeo.SelectTab(0);
             lbUnosObrada.Items.Clear();
-            lbukupnaCena.Text = "0,00 rsd";
+            lbukupnaCena.Text = "0,00 $";
             tbRacun.Text = string.Empty;
             
 
@@ -461,7 +461,7 @@ namespace WindowsFormsProjekat
         private void tbTransakcija_Click(object sender, EventArgs e)
         {
             lbUnosObrada.Items.Clear();
-            lbukupnaCena.Text = "0.00 rsd";
+            lbukupnaCena.Text = "0.00 $";
             tbRacun.Text = string.Empty;
             trArtikli.Controls.Clear();
             tbFiskalniRacun.Text = string.Empty;
@@ -471,6 +471,34 @@ namespace WindowsFormsProjekat
         private void lbUnosObrada_SelectedIndexChanged(object sender, EventArgs e)
         {
             btDaljaObrada.Enabled = true;
+        }
+
+
+
+        public void SetSerbianLang()
+        {
+            this.Text = "Prodaja/Naplata";
+            tbTransakcija.Text = "Nova Transakcija";
+            tbUnosObrada.Text = "Unos/Obrada";
+            tbFiskalniRacun.Text = "Fiskalni račun";
+            btObrisi.Text = "Obriši";
+            btDaljaObrada.Text = "Dalje =>";
+            btUnos.Text = "Unesi";
+            btPonistavanje.Text = "Poništi";
+            btSacuvajRacun.Text = "Sačuvaj račun";
+        }
+
+        public void SetEnglishLang()
+        {
+            this.Text = "Selling/Billing";
+            tbTransakcija.Text = "New Transaction";
+            tbUnosObrada.Text = "Input/Processing";
+            tbFiskalniRacun.Text = "Fiscal Bill";
+            btObrisi.Text = "Delete";
+            btDaljaObrada.Text = "Continue =>";
+            btUnos.Text = "Input";
+            btPonistavanje.Text = "Cancel input";
+            btSacuvajRacun.Text = "Save the reciept";
         }
     }
 }
