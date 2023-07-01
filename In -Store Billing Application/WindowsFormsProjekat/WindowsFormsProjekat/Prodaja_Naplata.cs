@@ -54,7 +54,7 @@ namespace WindowsFormsProjekat
             btBrojNula.Enabled = false;
             btMnozenje.Enabled = false;
             MaximizeBox = false;
-            
+            tbCitac.Enabled = false;
 
             foreach (Kategorija kategorija in kategorijaManager.kategorije)
             {
@@ -518,6 +518,11 @@ namespace WindowsFormsProjekat
                 e.Cancel = false;
                 proba = false;
             }
+        }
+
+        private void tbCitac_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

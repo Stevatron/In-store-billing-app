@@ -81,6 +81,7 @@
             this.tbCitac.Name = "tbCitac";
             this.tbCitac.Size = new System.Drawing.Size(473, 20);
             this.tbCitac.TabIndex = 1;
+            this.tbCitac.TextChanged += new System.EventHandler(this.tbCitac_TextChanged);
             // 
             // trArtikli
             // 
@@ -448,7 +449,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox tbCitac;
         private System.Windows.Forms.FlowLayoutPanel trArtikli;
         private System.Windows.Forms.TabControl tbCeo;
         private System.Windows.Forms.ListBox lbUnosObrada;
@@ -478,5 +478,6 @@
         public System.Windows.Forms.Button btObrisi;
         public System.Windows.Forms.Button btUnos;
         public System.Windows.Forms.Button btPonistavanje;
+        public System.Windows.Forms.TextBox tbCitac;
     }
 }
